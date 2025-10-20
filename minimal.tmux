@@ -44,7 +44,7 @@ default_color="#[bg=default,fg=default,bold]"
 bg=$(get_tmux_option "@minimal-tmux-bg" "#C18F1A")
 fg=$(get_tmux_option "@minimal-tmux-fg" "#3C3836")
 
-use_arrow=$(get_tmux_option "@minimal-tmux-use-arrow" false)
+use_arrow=$(get_tmux_option "@minimal-tmux-use-arrow" true)
 larrow="$("$use_arrow" && get_tmux_option "@minimal-tmux-left-arrow" "")"
 rarrow="$("$use_arrow" && get_tmux_option "@minimal-tmux-right-arrow" "")"
 
