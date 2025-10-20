@@ -26,6 +26,7 @@ This is inspired from the zellij prefix indicator, that shows when the prefix ke
 > This theme was created with a focus on minimalism and essential elements, ensuring a clean and distraction-free Tmux status bar. Whether you're an experienced Tmux user or just getting started, this theme offers a seamless experience with support for the `prefix key press`.
 
 Based on [minimal-tmux-status](https://github.com/niksingh710/minimal-tmux-status)
+<img width="1904" height="1064" alt="tmux" src="https://github.com/user-attachments/assets/1c2ef17d-1f62-4942-a276-c966e94b66d2" />
 
 </div>
 </p>
