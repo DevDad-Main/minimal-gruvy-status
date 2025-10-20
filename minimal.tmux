@@ -85,7 +85,11 @@ tmux set-option -g window-status-format "$window_status_format"
 "$show_expanded_icon_for_all_tabs" && \
   tmux set-option -g window-status-format " ${window_status_format}#{?window_zoomed_flag,${expanded_icon},}"
 
-tmux set-option -g window-status-current-format "#[fg=${bg}]$larrow#[bg=${bg},fg=${fg}]${window_status_format}#{?window_zoomed_flag,${expanded_icon},}#[fg=${bg},bg=default]$rarrow"
+# Active window "bubble" style
+tmux set-option -g window-status-current-format "#[fg=${bg}]#[bg=${bg},fg=${fg},bold] ${window_status_format} #[fg=${bg},bg=default]"
+
+# Inactive windows (flat or muted)
+tmux set-option -g window-status-format "#[fg=${bg},bg=default] ${window_status_format} "
 
 # -------------------------------------------------------------------
 # 🧠 Status Right — CPU + RAM + Icons
